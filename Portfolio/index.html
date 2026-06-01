@@ -1,0 +1,168 @@
+<!--
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  あなただけの場所  /  index.html  （骨組み = HTML だけ）
+  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  この3ファイルは、必ず同じフォルダに入れておいてください。
+    ├─ index.html   ← このファイル（構造）
+    ├─ style.css    ← 見た目
+    └─ script.js    ← 作品データ＆動き
+
+  下の <link> と <script> が、その2つを呼び込んでいます。
+  作品を増やしたいときは、このファイルではなく script.js を開いてください。
+-->
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>.nul</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Shippori+Mincho:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- ↓ 見た目（CSS）を呼び込む -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="frame"></div>
+
+<!-- ════════ ヘッダー ════════ -->
+<header>
+  <div class="wrap topbar">
+    <div class="mono">Y</div> <!-- ✎ EDIT イニシャル -->
+    <nav>
+      <a href="#profile">Profile</a>
+      <a href="#works">Works</a>
+      <a href="#world">World</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ════════ ヒーロー ════════ -->
+<div class="hero">
+  <div class="wrap">
+    <div class="kicker">Personal Space</div>
+    <!-- ✎ EDIT ローマ字の名前 -->
+    <h1>Nul<br><em>.r</em></h1>
+    <!-- ✎ EDIT 日本語の名前 -->
+    <div class="name-jp">ヌル.アール</div>
+    <!-- ✎ EDIT ひとこと -->
+    <p class="tagline">nul<br>
+      好きなものを作り、動かし、自分が好き、見たい世界を静かに置いています。</p>
+  </div>
+  <div class="vline"></div>
+  <div class="vtext">A QUIET PLACE OF MY OWN</div>
+</div>
+
+<!-- ════════ 01 自己紹介 ════════ -->
+<section id="profile">
+  <div class="wrap sec-pad">
+    <div class="sec-head reveal">
+      <span class="num">01</span>
+      <span class="en">Profile</span>
+      <span class="jp">自己紹介</span>
+    </div>
+    <div class="profile reveal">
+      <div>
+        <!-- ✎ EDIT 自己紹介の一文目（大きめ） -->
+        <p class="lead">はじめまして。<br>nul.rと申します。</p>
+        <!-- ✎ EDIT 自己紹介の本文 -->
+        <p class="body" style="margin-top:24px;">
+          現役大学二年生、日本人。
+          プログラムを中心にゲーム開発に関して学習を日々続けています。
+          作品は、静けさや余白を感じるものが好きで、自分の見て見たい世界を表現したいと思い活動しています。
+        </p>
+      </div>
+      <!-- ✎ EDIT 項目（行はコピーして増やせます） -->
+      <div class="facts">
+        <div class="row"><span class="label">Based</span><span>日本 / Japan</span></div>
+        <div class="row"><span class="label">Field</span><span>Game Development, 3DCG</span></div>
+        <div class="row"><span class="label">Likes</span><span>静けさ、機械、ホラー</span></div>
+        <div class="row"><span class="label">Since</span><span>2025 —</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ 02 作品・趣味 ════════ -->
+<section id="works">
+  <div class="wrap sec-pad">
+    <div class="sec-head reveal">
+      <span class="num">02</span>
+      <span class="en">Works</span>
+      <span class="jp">作品・趣味</span>
+    </div>
+
+    <!--
+      ここは「空っぽ」です。中身は script.js の works 配列から、
+      自動で生成されて入ります。作品を増やすときは script.js を編集。
+    -->
+    <div class="tab-bar reveal" id="works-tabs"></div>
+    <div class="works reveal" id="works-grid"></div>
+  </div>
+</section>
+
+<!-- ════════ 03 自分の世界 ════════ -->
+<section id="world">
+  <div class="wrap sec-pad">
+    <div class="sec-head reveal">
+      <span class="num">03</span>
+      <span class="en">World</span>
+      <span class="jp">自分の世界</span>
+    </div>
+    <div class="world reveal">
+      <div class="rail"></div>
+      <div class="inner">
+        <!-- ✎ EDIT 好きな言葉・信条 -->
+        <blockquote>Less, but&nbsp;better.</blockquote>
+        <!-- ✎ EDIT その説明 -->
+        <p class="credo">
+          自分の好きな視覚効果などを置かせていただいています。
+        </p>
+        <!-- ✎ EDIT 好きなものの言葉（自由に増減） -->
+        <div class="tags">
+          <span>静けさ</span><span>余白</span><span>不気味</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════ フッター ════════ -->
+<footer>
+  <div class="wrap" style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:20px;">
+    <!-- ✎ EDIT 連絡先・リンク -->
+    <div class="links">
+      <a href="#">Mail</a>
+      <a href="https://www.instagram.com/nul.r_000/">Instagram</a>
+      <a href="https://x.com/nulr_dust">X</a>
+    </div>
+    <div class="copy">© 2025 nul.r</div>
+  </div>
+</footer>
+
+<!-- ════════ モーダル ════════ -->
+<div class="modal" id="work-modal">
+  <div class="modal-inner">
+    <div class="modal-img-area">
+      <img class="modal-img" src="" alt="">
+      <button class="modal-close">Close</button>
+      <button class="modal-prev">&#8592;</button>
+      <button class="modal-next">&#8594;</button>
+      <div class="modal-dots" id="modal-dots"></div>
+    </div>
+    <div class="modal-info">
+      <span class="modal-genre" id="modal-genre"></span>
+      <h3 class="modal-title" id="modal-title"></h3>
+      <p class="modal-desc" id="modal-desc"></p>
+    </div>
+  </div>
+</div>
+
+<!-- ↓ 作品データと動き（JavaScript）を呼び込む -->
+<script src="script.js"></script>
+</body>
+</html>
