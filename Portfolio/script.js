@@ -15,7 +15,7 @@ const works = [
   // category は "3DCG" / "GameCoding" / "Game" のどれかにする
   // ------------------------------ 3DCG --------------------------------------
   {
-    title: "空間",
+    title: "Room",
     genre: "PostEffect",
     desc: "1つの部屋に指す光、自然と良く見えるもの。",
     url: "#",
