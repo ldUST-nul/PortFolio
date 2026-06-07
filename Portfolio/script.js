@@ -45,6 +45,16 @@ const works = [
     ],
     category: "3DCG",
   },
+  {
+    title: "Sky",
+    genre: "DreamCore",
+    desc: "空",
+    url: "#",
+    images: [
+      "Images/3DCG/Sky/Sky1.png",
+    ],
+    category: "3DCG",
+  },
   // ------------------------------ Coding --------------------------------------
   
   
